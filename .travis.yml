@@ -1,0 +1,15 @@
+language: php
+
+php:
+  - 7.1
+
+before_script:
+  - composer install
+
+script:
+  - phpunit --bootstrap src/source.php tests/sourceTest
+
+notifications:
+  email:
+    on_success: always
+    on_failure: always
