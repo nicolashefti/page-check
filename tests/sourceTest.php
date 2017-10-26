@@ -25,6 +25,6 @@ class PageCrawlerTest extends TestCase
     {
         $pageCrawler = new PageCrawler('http://rdv-chl.lu/maternite/cours/1365/cycles');
 
-        $this->assertEquals($pageCrawler->getLastCourseName(), 'Cycle 35F');
+        $this->assertEquals($pageCrawler->getLastCourseName(), 'Cycle 34F');
     }
 }
